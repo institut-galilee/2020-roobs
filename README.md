@@ -1,5 +1,5 @@
 # 2020-roobs 
-Les memebres de ce projet:
+Les membres de ce projet:
 
 * Amel AIT MOHAND
 * Tafsouth AKKOUL
