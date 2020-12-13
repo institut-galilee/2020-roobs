@@ -22,4 +22,4 @@ Dans ce projet, on vous montrera comment créer un robot anti-obstacle basé sur
 - 8x wires males-females
 
 # Montage: 
-On a utiliser le logiciels fritzing pour modéliser le schema.
+On a utiliser le logiciel fritzing pour modéliser le schema.
