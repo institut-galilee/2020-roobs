@@ -1,0 +1,31 @@
+// Capteur ultrason
+int trigPin = 1;    // Trigger
+int echoPin = 2;    // Echo
+long duration, cm;
+
+void setup(){ /*fonction setup() */
+  /*initialise le port série*/
+  Serial.begin(9600); 
+  /*initialisation des branches*/
+  pinMode(trigPin, OUTPUT);// Mettre la variable trigPin en sortie 
+  pinMode(echoPin, INPUT);// Mettre la variable echoPin en entrer
+}
+
+void capteur(){ // Fonction du capteur
+  /*lance une mesure de distance en envoyant une impulsion HIGH sur la branche TRIGGER*/
+  digitalWrite(trigPin, HIGH);// Allumer le trigPin rouge
+  delayMicroseconds(10); // Pendant 10 microseconde
+  digitalWrite(trigPin, LOW);// eteindre le trigPin rouge
+
+  pinMode(echoPin, INPUT); // Mettre la variable echoPin en entrer
+  /* Mesure le temps entre l'envoi de l'implusion ultrasonique et son écho*/
+  duration = pulseIn(echoPin, HIGH);// recuperer la durée
+
+  /*Calcul la disctance à partir du temps mesuré*/
+  cm = (duration / 2) / 29.1;
+  /*affiche les résulats en cm */
+  Serial.print("distance: ");
+  Serial.println(cm); 
+  /*délai d'attente pour éviter d'afficher trop de résultats à la seconde */
+  delay(500);
+}
