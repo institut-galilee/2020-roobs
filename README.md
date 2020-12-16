@@ -4,7 +4,7 @@ membres du groupe:
   2. Akkoul Tafsouth
   
   
-Dans ce projet, on vous montrera comment créer un robot anti-obstacle basé sur Arduino en utilisant un capteur ultrasonique HC-SR04.
+Dans ce projet, on vous montrera comment créer un robot anti-obstacle basé sur Arduino en utilisant un capteur ultrason HC-SR04.
 
 # Composants: 
 
